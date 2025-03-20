@@ -14,7 +14,7 @@ const Support = () => {
     <>
       <div
         style={{ backgroundImage: `url(${Img})` }}
-        className="bg-cover bg-center font-poppins relative z-[99]"
+        className="bg-cover bg-center font-poppins relative z-[99] overflow-hidden"
       >
         <div className="h-[60px]"></div>
 
@@ -22,8 +22,9 @@ const Support = () => {
           <div className="col-span-6">
             <div className="flex justify-center">
               <div className="relative">
-                <img className="h-[300px] md:h-[400px] mt-0" src={Img1} alt="abc" />
+                <img   data-aos="flip-up" className="h-[300px] md:h-[400px] mt-0" src={Img1} alt="abc" />
                 <img
+                 data-aos="flip-down"
                   className="h-[300px] md:h-[400px] mt-[-100px] md:mt-[-132px] ml-[120px] md:ml-[192px]"
                   src={Img2}
                   alt="abc"
@@ -35,28 +36,28 @@ const Support = () => {
           <div className="second-column pr-4 col-span-6 mt-8 md:mt-0">
             <div className="flex justify-start pl-4 md:pl-12">
               <div>
-                <h1 className="font-poppins text-[#303CA9] font-semibold">
+                <h1  data-aos="zoom-out-left" className="font-poppins text-[#303CA9] font-semibold">
                   OUR PARTNERS
                 </h1>
-                <h1 className="font-poppins font-extrabold text-[20px] md:text-[24px] text-[#303CA9]">
+                <h1 data-aos="zoom-out-left" className="font-poppins font-extrabold text-[20px] md:text-[24px] text-[#303CA9]">
                   Your Support is Really <br />
                   Powerful.​
                 </h1>
-                <p className="text-[#000] pr-6 mt-4 text-sm md:text-base">
+                <p data-aos="zoom-out-left" className="text-[#000] pr-6 mt-4 text-sm md:text-base">
                   We add value to its resistance to promote economic growth and
                   stability for all residents of New York City by connecting
                   individuals to employment opportunities, supporting the
                   development of strong businesses, and promoting fairness and
                   equity in neighborhoods throughout the five boroughs.
                 </p>
-                <p className="text-[#000] mt-3 pr-6 text-sm md:text-base">
+                <p data-aos="zoom-out-left" className="text-[#000] mt-3 pr-6 text-sm md:text-base">
                   People's foundation Emerge has built coalitions and works
                   closely with community organizations to establish a supportive
                   environment for local businesses to succeed, ultimately
                   leading to dynamic neighborhoods where individuals can reside,
                   conduct business, work, shop, and engage in leisure activities.
                 </p>
-                <button className="mt-3 bg-[#303CA9] text-[#fff] px-6 py-2 rounded transition-colors text-sm md:text-base">
+                <button  data-aos="flip-up" className="mt-3 bg-[#303CA9] text-[#fff] px-6 py-2 rounded transition-colors text-sm md:text-base">
                   Read More
                 </button>
               </div>
@@ -68,20 +69,20 @@ const Support = () => {
         </div>
 
         <div className="px-4 md:px-20 flex flex-col md:flex-row justify-between mt-12">
-          <h1 className="font-poppins font-extrabold text-[20px] md:text-[24px] text-[#303CA9] text-center md:text-start">
+          <h1  data-aos="zoom-out-right" className="font-poppins font-extrabold text-[20px] md:text-[24px] text-[#303CA9] text-center md:text-start">
             You can help lots of people by <br />
             donating little.
           </h1>
-          <div className="flex gap-8 md:gap-32 items-center mt-4 md:mt-0 justify-center md:justify-start">
+          <div  data-aos="zoom-out-left" className="flex gap-8 md:gap-32 items-center mt-4 md:mt-0 justify-center md:justify-start">
             <FaChevronCircleRight className="text-white h-8 w-8 md:h-12 md:w-12" />
             <FaChevronCircleLeft className="h-8 w-8 md:h-12 md:w-12 text-white" />
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-stretch font-poppins">
+      <div className="flex flex-col md:flex-row items-stretch font-poppins overflow-hidden">
         {/* Left Section (Text) */}
-        <div className="left bg-partnership-gradient p-4 md:p-7 flex-1 flex flex-col justify-center">
+        <div  data-aos="zoom-out-right" className="left bg-partnership-gradient p-4 md:p-7 flex-1 flex flex-col justify-center">
           <h1 className="text-white font-semibold text-center text-lg md:text-xl w-full md:w-[410px] mx-auto">
             RESIDENTIAL COMMUNITY
           </h1>
@@ -96,7 +97,7 @@ const Support = () => {
         </div>
 
         {/* Right Section (Images) */}
-        <div className="right flex flex-1 h-full mt-4 md:mt-0">
+        <div data-aos="zoom-out-left" className="right flex flex-1 h-full mt-4 md:mt-0">
           <div className="img flex-1">
             <img src={Img4} alt="img" className="w-full h-full object-cover" />
           </div>
@@ -108,7 +109,7 @@ const Support = () => {
 
       <div className="flex flex-col md:flex-row items-stretch font-poppins">
         {/* Left Section (Images) */}
-        <div className="right flex w-full md:w-[51.8%] h-full">
+        <div data-aos="zoom-out-left" className="right flex w-full md:w-[51.8%] h-full">
           <div className="img flex-1">
             <img
               src={Img6}
@@ -126,7 +127,7 @@ const Support = () => {
         </div>
 
         {/* Right Section (Text) */}
-        <div className="left bg-partnership-gradient p-4 md:p-7 w-full md:w-[48%] flex flex-col justify-end">
+        <div data-aos="zoom-out-right" className="left bg-partnership-gradient p-4 md:p-7 w-full md:w-[48%] flex flex-col justify-end">
           <h1 className="text-white font-semibold text-center text-lg md:text-xl w-full md:w-[180px] mx-auto">
             CBO
           </h1>

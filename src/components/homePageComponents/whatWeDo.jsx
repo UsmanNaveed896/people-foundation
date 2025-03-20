@@ -6,14 +6,14 @@ const WhatWeDo = () => {
   return (
     <div
       style={{ backgroundImage: `url(${Img})` }}
-      className="bg-center bg-cover font-poppins"
+      className="bg-center bg-cover font-poppins overflow-hidden"
     >
       {/* Header Section */}
       <div className="py-8 px-4 md:px-8">
-        <h1 className="font-poppins text-[#303CA9] text-center text-[20px] md:text-[24px] font-bold">
+        <h1 data-aos="zoom-out-right" className="font-poppins text-[#303CA9] text-center text-[20px] md:text-[24px] font-bold">
           What We Do
         </h1>
-        <p className="font-poppins text-white text-[20px] md:text-[24px] text-center">
+        <p data-aos="zoom-out-right" className="font-poppins text-white text-[20px] md:text-[24px] text-center">
           Empowering Merchants & Strengthening <br className="hidden md:block" /> Communities
         </p>
       </div>
@@ -23,13 +23,13 @@ const WhatWeDo = () => {
         {/* First Block */}
         <div className="max-w-[400px] flex flex-col items-center text-center">
           <div className="flex justify-center py-3">
-            <SlBadge className="h-12 w-12 text-white" />
+            <SlBadge data-aos="flip-up" className="h-12 w-12 text-white" />
           </div>
-          <h1 className="text-[18px] font-bold text-white">
+          <h1 data-aos="zoom-in" className="text-[18px] font-bold text-white">
             Merchant Safety & Community Development
           </h1>
-          <p className="text-[14px] font-normal mt-3 text-white">
-            We also conduct community workshops for merchants to <br className="hidden md:block" />
+          <p data-aos="zoom-in" className="text-[14px] font-normal mt-3 text-white">
+            We also conduct community workshops for merchants to <br className="hidden md:hidden" />
             educate them on crime prevention techniques and principles that can help deter crime
             and improve perceptions of safety. We host monthly Steering Committee Meetings to
             establish the merchant association's framework, define purpose, and encourage leadership.
@@ -39,12 +39,12 @@ const WhatWeDo = () => {
         {/* Second Block */}
         <div className="max-w-[400px] flex flex-col items-center text-center">
           <div className="flex justify-center py-3">
-            <SlBadge className="h-12 w-12 text-white" />
+            <SlBadge  data-aos="flip-up" className="h-12 w-12 text-white" />
           </div>
-          <h1 className="text-[18px] font-bold text-white">
+          <h1 data-aos="zoom-in" className="text-[18px] font-bold text-white">
             Stronger Together: Building a Thriving Community
           </h1>
-          <p className="text-[14px] font-normal mt-3 text-white">
+          <p data-aos="zoom-in" className="text-[14px] font-normal mt-3 text-white">
             We believe that by working together, we can create a thriving and
             vibrant local economy that benefits everyone. Our goal is to provide
             our members with resources and opportunities to help them succeed,

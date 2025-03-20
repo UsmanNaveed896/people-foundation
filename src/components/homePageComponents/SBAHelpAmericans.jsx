@@ -9,19 +9,20 @@ const SBAHelpAmericans = () => {
   return (
     <div
       style={{ backgroundImage: `url(${Img})` }}
-      className="bg-cover bg-center font-poppins relative py-16 md:py-32 bg-capital-gradient"
+      className="bg-cover bg-center font-poppins relative py-16 md:py-32 bg-capital-gradient overflow-hidden"
     >
       {/* Background Image */}
-      <div className="">
+      <div>
         <img
           className="absolute z-[-1] w-full h-[90%] object-cover"
           src={Img1}
           alt="new"
+          data-aos="fade-in"
         />
       </div>
 
       {/* Heading Section */}
-      <div className="flex justify-center">
+      <div className="flex justify-center" data-aos="fade-up">
         <div className="text-center">
           <h1 className="font-poppins text-[#fff] font-semibold text-sm md:text-base my-2">
             U.S. Small Business Administration
@@ -40,30 +41,18 @@ const SBAHelpAmericans = () => {
       {/* Images Section */}
       <div className="flex flex-col md:flex-row justify-center items-center mt-8 md:mt-16 gap-4 md:gap-12 px-4">
         {/* Image 1 */}
-        <div className="mt-8 md:mt-16">
-          <img
-            className="w-full md:w-auto"
-            src={Img6}
-            alt="img"
-          />
+        <div className="mt-8 md:mt-16" data-aos="zoom-in">
+          <img className="w-full md:w-auto" src={Img6} alt="img" />
         </div>
 
         {/* Image 2 */}
-        <div>
-          <img
-            className="w-full md:w-auto"
-            src={Img7}
-            alt="img"
-          />
+        <div data-aos="zoom-in" data-aos-delay="200">
+          <img className="w-full md:w-auto" src={Img7} alt="img" />
         </div>
 
         {/* Image 3 */}
-        <div className="mt-8 md:mt-16">
-          <img
-            className="w-full md:w-auto"
-            src={Img8}
-            alt="img"
-          />
+        <div className="mt-8 md:mt-16" data-aos="zoom-in" data-aos-delay="400">
+          <img className="w-full md:w-auto" src={Img8} alt="img" />
         </div>
       </div>
     </div>

@@ -6,12 +6,17 @@ const OutReachCenter = () => {
   return (
     <div
       style={{ backgroundImage: `url(${Img})` }}
-      className="bg-cover bg-center font-poppins relative py-12 bg-capital-gradient "
+      className="bg-cover bg-center font-poppins relative py-12 bg-capital-gradient overflow-hidden"
     >
       <div className="">
-        <img className="absolute z-[-1] w-full top-0 h-[450px]" src={Img1} alt="new" />
+        <img
+          className="absolute z-[-1] w-full top-0 h-[450px]"
+          src={Img1}
+          alt="new"
+          data-aos="fade-in"
+        />
       </div>
-      <div className="flex justify-center px-4 md:px-0">
+      <div className="flex justify-center px-4 md:px-0" data-aos="zoom-in">
         <div>
           <h1 className="font-poppins text-[#fff] font-semibold text-center my-2">
             U.S. Small Business Administration
@@ -28,28 +33,24 @@ const OutReachCenter = () => {
       </div>
 
       <div className="grid md:grid-cols-3 grid-cols-1 gap-6 md:px-16 px-4">
-        <div className="rounded-full py-4 px-4 text-[#FF0606] border-[#FF0606] bg-white text-center">
-          Pre-Business Plan Workshops/Concept Assessments
-        </div>
-        <div className="rounded-full py-4 px-4 text-[#FF0606] border-[#FF0606] bg-white text-center">
-          Business Plan Assistance
-        </div>
-        <div className="rounded-full py-4 px-4 text-[#FF0606] border-[#FF0606] bg-white text-center">
-          Comprehensive Feasibility Analysis/Strategy
-        </div>
-
-        <div className="rounded-full py-4 px-4 text-[#FF0606] border-[#FF0606] bg-white text-center">
-          One-on-One Counseling
-        </div>
-        <div className="rounded-full py-4 px-4 text-[#FF0606] border-[#FF0606] bg-white text-center">
-          Training
-        </div>
-        <div className="rounded-full py-4 px-4 text-[#FF0606] border-[#FF0606] bg-white text-center">
-          Mentorship
-        </div>
-        <div className="rounded-full py-4 px-4 text-[#FF0606] border-[#FF0606] bg-white text-center">
-          Other Related Business Development Services
-        </div>
+        {[
+          'Pre-Business Plan Workshops/Concept Assessments',
+          'Business Plan Assistance',
+          'Comprehensive Feasibility Analysis/Strategy',
+          'One-on-One Counseling',
+          'Training',
+          'Mentorship',
+          'Other Related Business Development Services',
+        ].map((text, index) => (
+          <div
+            key={index}
+            className="rounded-full py-4 px-4 text-[#FF0606] border-[#FF0606] bg-white text-center"
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+          >
+            {text}
+          </div>
+        ))}
       </div>
     </div>
   );
